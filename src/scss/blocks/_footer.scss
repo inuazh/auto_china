@@ -1,0 +1,154 @@
+.footer {
+	padding: 30px 0;
+	background: var(--blue);
+}
+
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+
+	margin-bottom: 20px;
+}
+
+.footer__nav {
+	display: flex;
+	gap: 60px;
+
+	@include mobile {
+		column-gap: 16px;
+		row-gap: 24px;
+
+		flex-wrap: wrap;
+	}
+}
+
+.footer__nav-items {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	@include mobile {
+		width: 157px;
+		gap: 24px;
+	}
+}
+
+.footer__nav-item {
+
+}
+
+.footer__nav-link {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	color: var(--white);
+
+	transition: color .3s ease-in;
+
+	&:hover {
+		color: var(--light-blue);;
+	}
+}
+
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.footer__tel {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 120%;
+	color: var(--white);
+
+	transition: color .3s ease-in;
+
+	&:hover {
+		color: var(--light-blue);;
+	}
+}
+
+.footer__mail {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 120%;
+	color: var(--white);
+
+	transition: color .3s ease-in;
+
+	&:hover {
+		color: var(--light-blue);;
+	}
+}
+
+.footer__social {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	@include mobile {
+		order: -1;
+	}
+}
+
+.footer__social-link {
+
+}
+
+
+
+.footer__copy {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	border-top: 1px solid var(--white);
+	padding-top: 20px;
+
+	@include mobile {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+		padding-top: 24px;
+	}
+}
+
+.footer__copy-links {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+
+	@include mobile {
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
+
+.footer__copy-link {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 120%;
+	color: var(--white);
+
+	transition: color .3s ease-in;
+
+	&:hover {
+		color: var(--light-blue);;
+	}
+}
+
+.footer__copy-desc {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 120%;
+	color: var(--white);
+}

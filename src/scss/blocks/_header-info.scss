@@ -1,0 +1,143 @@
+.header__info {
+    padding-top: 16px;
+    padding-bottom: 16px; 
+        
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 38px;
+
+    @include netbook {
+        gap: 20px;
+    }
+
+    @include tablet {
+        gap: 10px;
+    }
+
+    @include mobile {
+        padding-top: 19px;
+        padding-bottom: 19px; 
+    }
+}
+
+.header__logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.header__form-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__info-link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--white);
+}
+
+.header__info-contact {
+    // width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: right;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__info-tel {
+    display: inline-block;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--white);
+
+    @include netbook {
+        font-size: 16px;
+    }
+
+    @include tablet {
+        font-size: 14px;
+    }
+}
+
+.header__info-tel.active {
+    color: var(--black);
+}
+
+.header__info-time {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--grey);
+
+    @include netbook {
+        font-size: 12px;
+    }
+
+    @include tablet {
+        font-size: 10px;
+    }
+}
+
+.header__info-favor {
+    padding: 12px;
+
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    background: #202f3e;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__info-favor.active {
+    background: var(--light-grey);
+}
+
+.header__info-favor-link {
+    position: relative;
+}
+
+.header__amount-favor {
+    position: absolute;
+    top: -22px;
+    right: -25px;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-blue);
+    color: #fff;
+}
+
+.header__info-mobile-search {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.header__info-mobile-search-btn {
+   
+}

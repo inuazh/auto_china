@@ -1,0 +1,39 @@
+.nav {
+	padding: 7.5px 0;
+
+    border-bottom: 1px solid var(--black);
+    background-color: transparent;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.nav__list {
+	display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+
+.nav__link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--grey);
+
+    transition: all .2s ease-in;
+
+    &:hover {
+        color: var(--light-blue);
+    }
+}
+
+.nav__link.active {
+    color: var(--white);
+
+    &:hover {
+        color: var(--light-blue);
+    }
+}

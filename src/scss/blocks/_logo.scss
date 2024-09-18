@@ -1,0 +1,20 @@
+.logo {
+    font-family: var(--second-family);
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 120%;
+    color: var(--white);
+   
+    span {
+        color: var(--light-blue);
+    }
+
+    @include mobile {
+        font-size: 24px;
+    }
+}
+
+
+.logo.active {
+    color: #000;
+}

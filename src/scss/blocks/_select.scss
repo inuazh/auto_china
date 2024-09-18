@@ -1,0 +1,43 @@
+.select {
+    padding: 40px 0;
+
+    @include tablet {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @include mobile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.select__title {
+    margin-bottom: 40px;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+
+    @include mobile {
+        margin-bottom: 24px;
+    }
+}
+
+.select__wrapper {
+    padding: 24px 32px 32px;
+    border-radius: 16px;
+
+    height: 100%;
+    background: var(--blue);
+    box-shadow: 0 20px 20px 0 rgba(8, 50, 96, 0.15);
+
+    @include mobile {
+        padding: 24px 18px 32px 18px;
+    }
+}
+
+.select-form {
+   
+}
+

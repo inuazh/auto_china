@@ -1,0 +1,32 @@
+.favorite-btn {
+ 
+}
+
+.fav-btn {
+    position: absolute; 
+    top: 18px;
+    right: 18px;
+    z-index: 10;        
+
+    @include mobile {
+        top: 6px;
+        right: 6px;
+    }
+}
+
+.btn-favorite {
+    // &:hover .icon--favorite-02 {
+    //     stroke: var(--light-blue); // цвет оконтовки иконки по ховеру
+    // }
+
+    &--selected .icon--favorite-02 {  // если есть у кнопки модификатор  &--selected то иконка выбирается 
+        stroke:  var(--white);  
+        fill: var(--light-blue);; 
+
+        &:hover {
+            stroke:  var(--white); // когда выбрана иконка что бы не работал другой цвет ховера
+        }
+    }
+}
+
+// .btn-favorite--selected 

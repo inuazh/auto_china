@@ -1,0 +1,17 @@
+.header {
+	position: fixed;
+    width: 100%;
+	
+    z-index: 100;
+}	
+
+.header-top.active { 
+	background: #083260;
+}
+
+.header-bottom.active {
+	background: #fff;
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+

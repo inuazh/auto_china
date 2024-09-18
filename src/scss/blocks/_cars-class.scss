@@ -1,0 +1,31 @@
+.cars-class {
+    padding: 40px 0;
+
+    @include tablet {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @include mobile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+.cars-class__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    @include tablet {
+        gap: 14px;
+    }
+
+    @include mobile {
+        gap: 8px;
+        justify-content: center;
+    }
+}
