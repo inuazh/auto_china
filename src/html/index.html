@@ -14,18 +14,21 @@
 
 <body>
 	@@include('blocks/header.html')
+	<div class="header2div" style="display:none;">
+		@@include('blocks/header-2.html')
+	</div>
 	<main class="main">
 		@@include('blocks/hero.html')
 		@@include('blocks/brands.html')
-		@@include('blocks/cars-class.html') 
-		@@include('blocks/select.html')
+		@@include('blocks/classes.html')
+		@@include('blocks/search.html')
 		@@include('blocks/new-cars.html')
-		@@include('blocks/stock.html')
+		@@include('blocks/banners.html')
 		@@include('blocks/popular-cars.html')
 	</main>
 	@@include('blocks/footer.html')
 	<script src="./js/index.bundle.js"></script>
+	<!-- <script src="/src/js/index.js"></script> -->
 </body>
 
 </html>
-

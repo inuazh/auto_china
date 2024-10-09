@@ -1,30 +1,17 @@
 .hero {
+    height: 640px;
     padding-top: 236px;
 	padding-bottom: 168px;
 
 	background-color: #1D222C;
-	background-image: url('./../../img/hero/06-1\ 1.jpg');
+	background-image: url('./../../img/hero/hero.jpg');
 	background-position: 60% bottom; /* x y */
 	background-size: cover;
 	background-repeat: no-repeat;
-
-    @include mobile {
-        padding-top: 100px;
-        padding-bottom: 244px;  
-        // background-position: 60% 100px; /* x y */  
-    }
 }
 
 .hero__content {
     max-width: 468px;
-
-    @include tablet {
-        max-width: 368px;
-    }
-
-    @include mobile {
-        max-width: 312px;
-    }
 }
 
 .hero__title {
@@ -36,23 +23,26 @@
     color: var(--white);
 
     margin-bottom: 44px;
-
-    @include tablet {
-        font-size: 32px;
-    }
-
-    @include mobile {
-        font-size: 30px;
-        margin-bottom: 32px;
-    }
 }
 
-.hero__link {
+.hero__button {
+    border-radius: 8px;
+    padding: 10px 16px;
+    width: 200px;
+    height: 48px;
+    box-shadow: 0 4px 16px 0 rgba(29, 133, 248, 0.5);
+    background: var(--light-blue);
+
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
     line-height: 120%;
     text-align: center;
     color: var(--white);
-}
 
+    transition: opacity .3s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

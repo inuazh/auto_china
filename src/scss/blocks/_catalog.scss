@@ -1,0 +1,189 @@
+.catalog {
+    padding-top: 124px;
+    padding-bottom: 80px;
+}
+
+// Catalog Navigation
+.catalog__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.catalog__nav-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--grey);
+
+    transition: color .2s ease-in;
+
+    &:hover {
+        color: var(--light-blue)
+    }
+}
+
+.catalog__nav-head {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--grey);
+}
+// -------- END --------
+
+.catalog__row {
+    display: grid;
+    // grid-template-columns: 1fr 895px;
+    grid-template-columns: 0.318fr 1fr;
+    gap: 20px;
+}
+
+.catalog__items-titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.catalog__items-text {
+    display: flex;
+    gap: 32px;
+}
+
+.catalog__items-desc {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--light-blue);
+    cursor: pointer;
+}
+
+.catalog__items-desc--selected{
+    color: var(--black);
+}
+
+// Catalog Items Icons Tile and Row 
+.catalog__items-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.catalog__items-icon-tile {
+    cursor: pointer;
+    transition: transform .2s ease-in;
+}
+
+.catalog__items-icon-tile-svg {
+    fill: #888888;
+}
+
+.catalog__items-icon-tile > .catalog__items-icon-tile-svg {
+    transition: fill .2s ease-in;
+    &:hover {
+        fill: var(--black);
+    }
+}
+
+.catalog__items-icon-tile-svg.scale {
+    transform: scale(1.1);
+    fill: var(--black);
+}
+
+.catalog__items-icon-row {
+    cursor: pointer;
+    transition: transform .2s ease-in;
+}
+
+.catalog__items-icon-row-svg {
+    fill: #888888;
+}
+
+.catalog__items-icon-row > .catalog__items-icon-row-svg {
+    transition: fill .2s ease-in;
+    &:hover {
+        fill: var(--black);
+    }
+}
+
+.catalog__items-icon-row-svg.scale {
+    transform: scale(1.1);
+    fill: var(--black);
+}
+
+
+// -------- END --------
+
+// Отобображение карточек машин плитка и ряд
+.catalog__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.catalog__item.hide {
+    display: none;
+}
+
+.catalog__item-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.catalog__item-2.hide {
+    display: none;
+}
+
+// -------- END --------
+
+// Catalog Item Count
+.catalog__item-count {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 24px;
+    justify-content: flex-end;
+}
+
+.catalog__item-count-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--black);
+}
+
+.catalog__item-count-number {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.catalog__item-count-num {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--light-blue);
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.catalog__item-count-num--active {
+    color: var(--black);
+}

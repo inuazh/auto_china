@@ -1,29 +1,13 @@
 .brands {
     padding-top: 80px;
     padding-bottom: 40px;
-
-    @include tablet {
-        padding-top: 60px;
-        padding-bottom: 30px;
-    }
-
-    @include mobile {
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
 }
 
-
-.brands__wrap {
+.brands-cars__row {
     display: flex;
     align-items: center;
     gap: 8px;
     flex-wrap: wrap;
-
-    @include mobile {
-        gap: 10px;
-        justify-content: center;
-    }
 }
 
 .brands__link {
@@ -66,15 +50,6 @@
         position: absolute;
         right: 8px;
         top: 8.3px;
-    }
-
-    @include netbook {
-        width: 170px;
-        font-size: 16px;
-    }
-
-    @include mobile {
-        width: 160px;
     }
 }
 

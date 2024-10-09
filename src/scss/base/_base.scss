@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800);
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
 
 html {
 	scroll-behavior: smooth;
@@ -9,7 +8,7 @@ html {
 body {
 	background-color: var(--page-bg);
 	color: var(--text-color);
-	font-family: var(--font-main);
+	font-family: var(--font-family);
 	text-wrap: balance;
 }
 

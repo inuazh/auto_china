@@ -1,5 +1,4 @@
 <header class="header">
-    
     <div class="header-top">
         <div class="container">
             <nav class="nav">
@@ -15,57 +14,42 @@
         </div>
     </div>
 
-
     <div class="header-bottom">
         <div class="container">
             <div class="header__info">
+                <a href="#!" class="logo">LO<span class="logo__accent">GO</span></a>
 
-                <div class="header__logo-wrap"> 
-                    <button class="mobile-nav-btn">
-                        <div class="nav-icon"></div>
-                    </button>
-
-                    <a class="logo header__logo" href="#!">LO<span>GO</span></a>
-                </div>
-
-                <div class="header__form-wrap">
-                    <button class="btn btn--catalog">
-                        <a href="#!" class="header__info-link">
-                            <svg class="icon icon--catalog">
-                                <use href="./img/svgsprite/sprite.symbol.svg#menu"></use>
-                            </svg>
+                <div class="header__search">
+                    <a href="catalog-auto.html" class="header__search-btn">
+                        <button class="catalog-btn">
+                            <img src="./../../img/icons/catalog.svg" alt="">
                             Каталог
-                        </a>
-                    </button>
-
-                    @@include('blocks/header-form.html')
-                </div>
-
-                <div class="header__info-contact">
-                    <a class="header__info-tel" href="tel:+78002810212">8(800)281-02-12</a>
-                    <p class="header__info-time">пн-чт: 9:00—18:00, пт: 9:00–17:00</p>
-                </div>
-
-                <div class="header__info-favor">
-                    <a class="header__info-favor-link" href="#!">
-                        <span class="header__amount-favor">1</span>
-
-                        <svg class="icon icon--favorite">
-                            <use href="./img/svgsprite/sprite.symbol.svg#favorite-01"></use>
-                        </svg>
+                        </button>
                     </a>
-                </div>   
-
-                <div class="header__info-mobile-search">
-                    <button class="header__info-mobile-search-btn">
-                        <svg class="icon icon--mobile-search-btn">
-                            <use href="./img/svgsprite/sprite.symbol.svg#mobile-search-btn"></use>
-                        </svg>
-                    </button>
+                
+                    <form action="#" class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Введите название">
+                        <button class="header__search-button">
+                            <img src="./../../img/icons/search.svg" alt="">
+                        </button>
+                    </form>
                 </div>
 
+                <div class="header__contacts">
+                    <a class="header__tel" href="tel:+78002810212">8(800)281-02-12</a>
+                    <p class="header__time">пн-чт: 9:00—18:00, пт: 9:00–17:00</p>
+                </div>  
+
+                <div class="header__favorite">
+                    <a class="header__favorite-link" href="#!">
+                        <img src="./../../img/icons/favorite-01.svg" alt="">
+                    </a>
+                </div> 
             </div>
         </div>
     </div>
 </header>
 @@include('mobile-nav.html')
+<!-- <button class="mobile-nav-btn">
+    <div class="nav-icon"></div>
+</button> -->

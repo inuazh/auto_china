@@ -2,14 +2,14 @@
 .mobile-nav-btn {
 	--time: 0.1s;
 
-	--width: 20px;
-	--height: 14px;
+	--width: 40px;
+	--height: 30px;
 
-	--line-height: 3px;
-	--spacing: 3px;
+	--line-height: 4px;
+	--spacing: 6px;
 
-	--color: #1d85f8;
-	--radius: 1px;
+	--color: #000;
+	--radius: 4px;
 
 	/* Fixed height and width */
 	/* height: var(--height); */
@@ -21,7 +21,7 @@
 
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 }
 
 .nav-icon {
@@ -78,11 +78,15 @@
 	transform: rotate(-45deg);
 }
 
+/* Layout */
+
 .mobile-nav-btn {
 	z-index: 999;
-	display: none;
-
-	@include mobile {
-		display: block;
-	}
+	// display: none;
 }
+
+// @media (max-width: 1000px) {
+// 	.mobile-nav-btn {
+// 		display: block;
+// 	}
+// }

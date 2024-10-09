@@ -7,8 +7,6 @@
 
 .icon--catalog {
 	fill: var(--white);
-	width: 20px;
-	height: 13.5px;
 }
 
 .icon--search {
@@ -17,39 +15,28 @@
     height: 32px;
 }
 
-.icon--search.active {
+.icon--search2 {
 	stroke: var(--grey);
+    width: 32px;
+    height: 32px;
 }
-
 
 .icon--favorite {
-	fill: var(--white);;
+	fill: var(--white);
 }
 
-.icon--favorite.active {
+.icon--favorite2 {
 	fill: var(--blue);
 }
 
 
-.icon--favorite-02 {
+.icon--fav-btn {
 	fill:  var(--white);
 	stroke: var(--grey);
-
-	@include mobile {
-		width: 18px;
-		height: 19px;
-	}
+	stroke-width: 0.7px;
 } 
-
 
 .icon--vk {
 	fill:  var(--white);
 }
 
-.icon--mobile-search-btn {
-	fill: var(--white);
-}
-
-.icon--mobile-search-btn.active {
-	fill: var(--black);
-}

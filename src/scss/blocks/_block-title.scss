@@ -5,15 +5,6 @@
     gap: 30px;
 
     margin-bottom: 40px;
-
-    @include tablet {
-        margin-bottom: 32px;
-    }
-
-    @include mobile {
-        margin-bottom: 24px;
-        gap: 10px;
-    }
 }
 
 .block-title__link {
@@ -28,6 +19,4 @@
     &:hover {
         opacity: 0.8;
     }
-
-   
 }

@@ -1,6 +1,5 @@
   // SWIPER Slider
 import Swiper from 'swiper/bundle';
-// import styles bundle
 import 'swiper/css/bundle';
 
 function swiperSlider() {
@@ -18,7 +17,7 @@ function swiperSlider() {
 
     breakpoints: {
       920: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
       },
     }
