@@ -19,6 +19,7 @@
     @include mobile {
         padding: 2px 2px 16px 2px;
         width: 167px;
+        height: 195px;
         border-radius: 8px;
     }
 }
@@ -26,7 +27,7 @@
 .auto-card__imege {
     width: 265px;
     height: 180px;
-    border-radius: 10px;
+    border-radius: 4px;
     overflow: hidden;
 
     @include mobile {

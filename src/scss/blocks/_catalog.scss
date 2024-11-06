@@ -1,47 +1,30 @@
 .catalog {
+    position: relative;
+    z-index: 10;
     padding-top: 124px;
     padding-bottom: 80px;
-}
 
-// Catalog Navigation
-.catalog__nav {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    margin-top: 24px;
-    margin-bottom: 32px;
-}
-
-.catalog__nav-link {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-    text-align: right;
-    color: var(--grey);
-
-    transition: color .2s ease-in;
-
-    &:hover {
-        color: var(--light-blue)
+    @include mobile {
+        padding-top: 74px;
+        padding-bottom: 40px; 
     }
 }
 
-.catalog__nav-head {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-    text-align: right;
-    color: var(--grey);
+.block-title.catalog__title {
+    @include mobile {
+        margin-bottom: 16px;
+    }
 }
-// -------- END --------
 
 .catalog__row {
     display: grid;
     // grid-template-columns: 1fr 895px;
     grid-template-columns: 0.318fr 1fr;
     gap: 20px;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
 }
 
 .catalog__items-titles {
@@ -49,11 +32,20 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
+
+    @include mobile {
+        margin-bottom: 16px;
+    }
+
 }
 
 .catalog__items-text {
     display: flex;
     gap: 32px;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .catalog__items-desc {
@@ -75,6 +67,10 @@
     display: flex;
     align-items: center;
     gap: 4px;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .catalog__items-icon-tile {
@@ -119,14 +115,85 @@
     fill: var(--black);
 }
 
+// иконки фильтрации на 360 экране
+.catalog__items-filters {
+    display: none;
+
+    @include mobile {
+        width: 100%;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+} 
+
+.catalog__items-filters-left {
+    border-radius: 30px;
+    padding: 4px 8px;
+    width: 40px;
+    height: 32px;
+    background: var(--light-grey);
+
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.catalog__items-filters-right {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--black);
+
+    border-radius: 30px;
+    padding: 4px 8px;
+    width: 103px;
+    height: 32px;
+    background: var(--light-grey);
+}
 
 // -------- END --------
 
 // Отобображение карточек машин плитка и ряд
+.catalog__items {
+    
+}
+
 .catalog__item {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    @include mobile {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        gap: 4px;
+        
+        &::before {
+            content: '';
+    
+            background: var(--light-grey);
+            width: 106%;
+            height: 100%;
+    
+            position: absolute;
+            top: 0;
+            left: -10px;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
 }
 
 .catalog__item.hide {
@@ -153,6 +220,10 @@
 
     margin-top: 24px;
     justify-content: flex-end;
+
+    @include mobile {
+        justify-content: center;
+    }
 }
 
 .catalog__item-count-text {
